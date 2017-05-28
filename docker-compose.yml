@@ -1,7 +1,7 @@
 version: '2'
 
 services:
-  postgres:
+  postgres84:
     image: justdevzero/postgresql8.4
     environment:
       POSTGRES_USER: 'postgres'
