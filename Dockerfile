@@ -40,9 +40,6 @@ EXPOSE 5432
 
 RUN mkdir -p /var/run/postgresql && chown -R postgres /var/run/postgresql
 
-# Add VOLUMEs to allow backup of config, logs and databases
-VOLUME  ["/etc/postgresql", "/var/log/postgresql", "/var/lib/postgresql"]
-
 USER postgres
 
 # Set the default command to run when starting the container
